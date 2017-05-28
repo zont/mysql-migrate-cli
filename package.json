@@ -1,6 +1,6 @@
 {
   "name": "mysql-migrate-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Migrations tool for MYSQL db",
   "main": "index.js",
   "bin": {
