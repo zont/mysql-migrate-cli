@@ -14,7 +14,6 @@ const options = Object.assign({
   count: null
 }, args);
 
-
 if (options._.includes('create')) {
   create(options);
 } else if (options._.includes('down')) {
