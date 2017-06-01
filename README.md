@@ -47,11 +47,13 @@ By default used `development` config. Please use NODE_ENV to switch config
 ### Migration file format
 ```javascript
 module.exports = {
-  up: '',
-  down: ''
+  up: 'ALTER TABLE my_cool_table ADD COLUMN super_column TEXT;',
+  down: 'ALTER TABLE my_cool_table DROP COLUMN super_column;'
 }
 ```
-where `up` and `down` is plain SQL
+where `up` and `down` is plain SQL:
+- `up` section applies migration
+- `down` section revert migration
 
 ### In your `package.json`
 
