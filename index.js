@@ -1,10 +1,6 @@
-/* IMPORTS */
-
 const up = require('./lib/up');
 const down = require('./lib/down');
 const create = require('./lib/create');
-
-/* CODE */
 
 const args = require('minimist')(process.argv.slice(2));
 const options = Object.assign({
